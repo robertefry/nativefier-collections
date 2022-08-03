@@ -1,0 +1,32 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=eve-online-adam4eve-nativefier
+pkgver=1
+pkgrel=1
+pkgdesc="Infos, tools, and stats for EVE Online"
+arch=(x86_64)
+url=https://www.adam4eve.eu
+license=('GPL','custom:2')
+makedepends=(nodejs nodejs-nativefier npm)
+source=(eve-online-adam4eve-nativefier.desktop)
+sha256sums=(78d4b4ede16b064b679c0e3b807112ba50839bdb3d337e290545974562d1e61f)
+
+_instname=eve-online-adam4eve
+_execname=Adam4EVE
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://www.adam4eve.eu" \
+    --name $_execname
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}
