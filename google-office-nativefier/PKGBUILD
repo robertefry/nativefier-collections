@@ -1,0 +1,38 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=google-office-nativefier
+pkgver=1
+pkgrel=1
+pkgdesc="Electron wrapper for Google Office"
+arch=(x86_64)
+url=https://drive.google.com
+license=('MIT')
+makedepends=(nodejs nodejs-nativefier npm unzip)
+source=(google-office-nativefier.desktop
+        google-office-nativefier.png)
+sha256sums=(5abb5af17f82c2112b4da5adf16bdac460a52d86afca3273ea889263f19ef855
+            66bdce2fa39ca142d63f322cf9b0dc93873269930652a30037c1882fe99e02fd)
+
+_instname=google-office-nativefier
+_execname=GoogleOffice-Nativefier
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://drive.google.com/" \
+    --name $_execname \
+    --icon "google-office-nativefier.png" \
+    --user-agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0" \
+    --internal-urls ".*?(accounts|drive|docs|sheets|slides)\.google\.com.*?" \
+    --tray
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}

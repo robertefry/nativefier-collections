@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Google Office (Nativefier)
+Exec=google-office-nativefier
+Icon=/usr/share/pixmaps/google-office-nativefier.png
+Categories=Office;Productivity;Sheets;Google;Nativefier;
