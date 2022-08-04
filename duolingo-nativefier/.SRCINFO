@@ -1,0 +1,12 @@
+pkgname = duolingo-nativefier
+pkgdesc = Electron wrapper for duolingo.com
+pkgver = 1
+pkgrel = 1
+url = https://duolingo.com
+arch = x86_64
+license = GPL2
+makedepends = nodejs
+makedepends = nodejs-nativefier
+makedepends = npm
+source = duolingo-nativefier.desktop
+sha256sums = 4bde3aca554d43769ae26f67c3e361b291c078b23e11aaaefb8929bc0ed6a36d

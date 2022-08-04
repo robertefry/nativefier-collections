@@ -1,0 +1,32 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=duolingo-nativefier
+pkgver=1
+pkgrel=1
+pkgdesc="Electron wrapper for duolingo.com"
+arch=(x86_64)
+url=https://duolingo.com
+license=('GPL','custom:2')
+makedepends=(nodejs nodejs-nativefier npm)
+source=(duolingo-nativefier.desktop)
+sha256sums=(4bde3aca554d43769ae26f67c3e361b291c078b23e11aaaefb8929bc0ed6a36d)
+
+_instname=duolingo-nativefier
+_execname=Duolingo-Nativefier
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://duolingo.com" \
+    --name $_execname
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}
