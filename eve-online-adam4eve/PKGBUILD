@@ -17,7 +17,8 @@ _builddir=$_execname-linux-x64
 
 build() {
   nativefier "https://www.adam4eve.eu" \
-    --name $_execname
+    --name $_execname \
+    --internal-urls "login\.eveonline\.com"
 }
 
 package() {
