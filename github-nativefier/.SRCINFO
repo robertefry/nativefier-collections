@@ -1,0 +1,12 @@
+pkgname = github-nativefier
+pkgdesc = Electron wrapper for github.com
+pkgver = 1
+pkgrel = 1
+url = https://github.com
+arch = x86_64
+license = GPL2
+makedepends = nodejs
+makedepends = nodejs-nativefier
+makedepends = npm
+source = github-nativefier.desktop
+sha256sums = 21488a0295e9fb18fa5d820c90d68bd755a971a08886973da349123a375fc95f

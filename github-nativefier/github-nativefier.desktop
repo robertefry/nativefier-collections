@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=GitHub (Nativefier)
+Exec=github-nativefier
+Icon=/usr/share/pixmaps/github-nativefier.png
+Categories=Development;Utility;Nativefier;
