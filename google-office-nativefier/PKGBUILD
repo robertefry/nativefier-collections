@@ -21,7 +21,7 @@ build() {
   nativefier "https://drive.google.com/" \
     --name $_execname \
     --icon "google-office-nativefier.png" \
-    --user-agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0" \
+    --user-agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0" \
     --internal-urls ".*?(accounts|drive|docs|sheets|slides)\.google\.com.*?" \
     --tray
 }
