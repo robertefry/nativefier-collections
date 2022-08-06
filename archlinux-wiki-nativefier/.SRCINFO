@@ -1,0 +1,14 @@
+pkgname = archlinux-wiki-nativefier
+pkgdesc = Electron wrapper for wiki.archlinux.org
+pkgver = 1
+pkgrel = 1
+url = https://wiki.archlinux.org
+arch = x86_64
+license = GPL2
+makedepends = nodejs
+makedepends = nodejs-nativefier
+makedepends = npm
+source = archlinux-wiki-nativefier.desktop
+source = archlinux-wiki-nativefier.png
+sha256sums = 05bc4530f2b54364bb3cec0fa44f50038b4aaf8994f3cb210d558f1d48265404
+sha256sums = a74923f6b6ca60cc5cec192cae7da93385c7eb2048c993144bbcecab1a217882

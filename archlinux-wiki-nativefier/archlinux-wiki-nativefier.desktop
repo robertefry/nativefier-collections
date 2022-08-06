@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=ArchLinux Wiki
+Exec=archlinux-wiki-nativefier
+Icon=/usr/share/pixmaps/archlinux-wiki-nativefier.png
+Categories=Education;Network;Utility;Nativefier;
