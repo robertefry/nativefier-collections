@@ -1,22 +1,22 @@
 # Maintainer: Robert Fry <contact@robertfry.xyz>
 
-pkgname=github-nativefier
+pkgname=nfc-duolingo
 pkgver=1
 pkgrel=1
-pkgdesc="Electron wrapper for github.com"
+pkgdesc="Nativefier Collections; Duolingo (duolingo.com)"
 arch=(x86_64)
-url=https://github.com
+url=https://duolingo.com
 license=('GPL','custom:2')
-makedepends=(nodejs nodejs-nativefier npm)
-source=(github-nativefier.desktop)
-sha256sums=(21488a0295e9fb18fa5d820c90d68bd755a971a08886973da349123a375fc95f)
+makedepends=(nodejs-nativefier)
+source=(nfc-duolingo.desktop)
+sha256sums=(74695605dac5aa946a2f6e3cc2bfb0acc755b71b820c9a4ccfc7ec47d0e500b2)
 
-_instname=github-nativefier
-_execname=GitHub-Nativefier
+_instname=nfc-duolingo
+_execname=NativefierCollections-Duolingo
 _builddir=$_execname-linux-x64
 
 build() {
-  nativefier "https://github.com" \
+  nativefier "https://duolingo.com" \
     --name $_execname
 }
 

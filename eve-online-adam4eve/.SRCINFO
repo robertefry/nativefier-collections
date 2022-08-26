@@ -1,12 +1,10 @@
-pkgname = eve-online-adam4eve-nativefier
-pkgdesc = Infos, tools, and stats for EVE Online
+pkgname = nfc-eve-online-adam4eve
+pkgdesc = "Nativefier Collections; Infos, tools, and stats for EVE Online (adam4eve.eu)"
 pkgver = 1
 pkgrel = 1
 url = https://www.adam4eve.eu
 arch = x86_64
 license = GPL2
-makedepends = nodejs
 makedepends = nodejs-nativefier
-makedepends = npm
-source = eve-online-adam4eve-nativefier.desktop
-sha256sums = 78d4b4ede16b064b679c0e3b807112ba50839bdb3d337e290545974562d1e61f
+source = nfc-eve-online-adam4eve.desktop
+sha256sums = 6235b8a8d9d97275d1871ee42fa1b62dcbc38eeb2da1ac4ff7f5ad39e58c193b

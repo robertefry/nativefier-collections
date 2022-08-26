@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Google Office (Nativefier Collections)
+Exec=nfc-google-office
+Icon=/usr/share/pixmaps/nfc-google-office.png
+Categories=Office;Productivity;Sheets;Google;Nativefier;

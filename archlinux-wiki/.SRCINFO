@@ -1,0 +1,12 @@
+pkgname = nfc-archlinux-wiki
+pkgdesc = "Nativefier Collections; ArchLinux Wiki (wiki.archlinux.org)"
+pkgver = 1
+pkgrel = 1
+url = https://wiki.archlinux.org
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source = nfc-archlinux-wiki.desktop
+source = nfc-archlinux-wiki.png
+sha256sums = 6186dfc8aba5df081a5d17cb065da890d01858b600d98d1f28df4a6528ae0699
+sha256sums = a74923f6b6ca60cc5cec192cae7da93385c7eb2048c993144bbcecab1a217882

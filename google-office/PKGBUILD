@@ -1,26 +1,26 @@
 # Maintainer: Robert Fry <contact@robertfry.xyz>
 
-pkgname=google-office-nativefier
+pkgname=nfc-google-office
 pkgver=1
 pkgrel=1
-pkgdesc="Electron wrapper for Google Office"
+pkgdesc="Nativefier Collections; Google Office (drive.google.com)"
 arch=(x86_64)
 url=https://drive.google.com
-license=('MIT')
-makedepends=(nodejs nodejs-nativefier npm unzip)
-source=(google-office-nativefier.desktop
-        google-office-nativefier.png)
-sha256sums=(5abb5af17f82c2112b4da5adf16bdac460a52d86afca3273ea889263f19ef855
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-google-office.desktop
+        nfc-google-office.png)
+sha256sums=(e98c5178433c092c79937e0c40940311da7c588d07c4fef28d8f371b8330c6a4
             66bdce2fa39ca142d63f322cf9b0dc93873269930652a30037c1882fe99e02fd)
 
-_instname=google-office-nativefier
-_execname=GoogleOffice-Nativefier
+_instname=nfc-google-office
+_execname=NativefierCollections-GoogleOffice
 _builddir=$_execname-linux-x64
 
 build() {
   nativefier "https://drive.google.com/" \
     --name $_execname \
-    --icon "google-office-nativefier.png" \
+    --icon "nfc-google-office.png" \
     --user-agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0" \
     --internal-urls ".*?(accounts|drive|docs|sheets|slides)\.google\.com.*?" \
     --single-instance --tray

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=ArchLinux Wiki (Nativefier Collections)
+Exec=nfc-archlinux-wiki
+Icon=/usr/share/pixmaps/nfc-archlinux-wiki.png
+Categories=Education;Network;Utility;Nativefier;
