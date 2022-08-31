@@ -1,0 +1,12 @@
+pkgname = nfc-google-maps
+pkgdesc = "Nativefier Collections; Google Maps (maps.google.com)"
+pkgver = 1
+pkgrel = 1
+url = https://maps.google.com
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source = nfc-google-maps.desktop
+source = nfc-google-maps.png
+sha256sums = f796be2c3a3d01e42e9e6e2e65dd4a2afbd8d49cf39da98d99af0a74bbb63f9a
+sha256sums = ba1de61eaee61b78e5a3c15a74354a62fc1fb8180a67b758521868f1b7d9c70f
