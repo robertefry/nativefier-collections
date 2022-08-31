@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Google Translate (Nativefier Collections)
+Exec=nfc-google-translate
+Icon=/usr/share/pixmaps/nfc-google-translate.png
+Categories=Office;Translation;Google;Nativefier;
