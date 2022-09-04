@@ -1,0 +1,32 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-kana-pro
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; Kana Pro (kana.pro)"
+arch=(x86_64)
+url=https://kana.pro
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-kana-pro.desktop)
+sha256sums=(0cee2cc5c19cd6e3a99a65446bb35414feb6037408038265b7cdfc4d5f52bf81)
+
+_instname=nfc-kana-pro
+_execname=NativefierCollections-Kana-Pro
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://kana.pro" \
+    --name $_execname
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}
