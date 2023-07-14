@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Messenger (Nativefier Collections)
+Exec=nfc-messenger
+Icon=/usr/share/pixmaps/nfc-messenger.png
+Categories=Nativefier;Network;

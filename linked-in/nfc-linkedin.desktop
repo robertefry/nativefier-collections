@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=LinkedIn (Nativefier Collections)
+Exec=nfc-linkedin
+Icon=/usr/share/pixmaps/nfc-linkedin.png
+Categories=Network;Office;Utility;Nativefier;

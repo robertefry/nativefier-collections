@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Reddit (Nativefier Collections)
+Exec=nfc-reddit
+Icon=/usr/share/pixmaps/nfc-reddit.png
+Categories=Nativefier;

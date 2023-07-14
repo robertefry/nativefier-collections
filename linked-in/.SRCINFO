@@ -1,0 +1,10 @@
+pkgname = nfc-linkedin
+pkgdesc = "Nativefier Collections; LinkedIn (linkedin.com)"
+pkgver = 1
+pkgrel = 1
+url = https://www.linkedin.com
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source = nfc-linkedin.desktop
+sha256sums = 44679d9b7318d09951a3f3548dcd89be934d767c0a567973f90746d143e15116

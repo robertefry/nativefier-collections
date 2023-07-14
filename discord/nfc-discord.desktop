@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Discord (Nativefier Collections)
+Exec=nfc-discord
+Icon=/usr/share/pixmaps/nfc-discord.png
+Categories=Game;Network;Utility;Nativefier;

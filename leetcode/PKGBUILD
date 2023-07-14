@@ -1,0 +1,42 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-leetcode
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; LeetCode (leetcode.com)"
+arch=(x86_64)
+url=https://leetcode.com
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(https://userstyles.org/styles/userjs/166493/dark-leetcode.user.js
+        nfc-leetcode.desktop
+        nfc-leetcode.png)
+sha256sums=(c57766af516a336b27cafb85f51438fc144918d27f575e776cf8995d96571a45
+            9e596a4cf072c5f28db52dd8cf3a9607c2341521fcf21386ea820a27a3f5f67d
+            308c6dd469a3c353eb9b4798023034163d1ba3d1d986dd8679a3a71e98015ed0)
+
+_instname=nfc-leetcode
+_execname=NativefierCollections-LeetCode
+_builddir=$_execname-linux-x64
+
+prepare() {
+    mv dark-leetcode.user.js theme-dark.js
+}
+
+build() {
+  nativefier "https://leetcode.com" \
+    --name $_execname \
+    --icon "nfc-leetcode.png" \
+    --inject theme-dark.js
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}

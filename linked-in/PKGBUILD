@@ -1,0 +1,32 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-linkedin
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; LinkedIn (linkedin.com)"
+arch=(x86_64)
+url=https://www.linkedin.com/
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-linkedin.desktop)
+sha256sums=(44679d9b7318d09951a3f3548dcd89be934d767c0a567973f90746d143e15116)
+
+_instname=nfc-linkedin
+_execname=NativefierCollections-LinkedIn
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://www.linkedin.com/" \
+    --name $_execname
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}

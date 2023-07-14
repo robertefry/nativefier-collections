@@ -1,0 +1,10 @@
+pkgname = nfc-cloud.robertfry.xyz
+pkgdesc = "Nativefier Collections; cloud.robertfry.xyz"
+pkgver = 1
+pkgrel = 1
+url = https://cloud.robertfry.xyz
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source = nfc-cloud.robertfry.xyz.desktop
+sha256sums = 8143bc0339a1fe043004333fa5e2857e0326fcb8350dd1046e01e0dcecf9ecfa

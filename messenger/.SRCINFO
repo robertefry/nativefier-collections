@@ -1,0 +1,10 @@
+pkgname = nfc-messenger
+pkgdesc = "Nativefier Collections; Messenger (messenger.com)"
+pkgver = 1
+pkgrel = 1
+url = https://messenger.com
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source=nfc-messenger.desktop
+sha256sums=90a971f5fd6a6d0f96c6295745cedb341e25e550f158e8d0e58b32cffb23f5c0

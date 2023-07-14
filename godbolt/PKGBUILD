@@ -1,0 +1,35 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-godbolt
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; GodBolt Compiler Explorer (godbolt.org)"
+arch=(x86_64)
+url=https://godbolt.org/
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-godbolt.desktop
+        nfc-godbolt.png)
+sha256sums=(8a69c4f1953fbf3de69ae91bc069d79e336e1df01b056dcde3fea2233fe0a76f
+            71b7676525367ba1e27ec06f460d448666db9104f7f47ba5de2fbc7194a9783b)
+
+_instname=nfc-godbolt
+_execname=NativefierCollections-GodBolt
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://godbolt.org/" \
+    --name $_execname \
+    --icon "nfc-godbolt.png"
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}

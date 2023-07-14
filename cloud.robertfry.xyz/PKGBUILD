@@ -1,0 +1,32 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-cloud.robertfry.xyz
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; cloud.robertfry.xyz"
+arch=(x86_64)
+url=https://cloud.robertfry.xyz
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-cloud.robertfry.xyz.desktop)
+sha256sums=(8143bc0339a1fe043004333fa5e2857e0326fcb8350dd1046e01e0dcecf9ecfa)
+
+_instname=nfc-cloud.robertfry.xyz
+_execname=NativefierCollections-cloud.robertfry.xyz
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://cloud.robertfry.xyz" \
+    --name $_execname
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}

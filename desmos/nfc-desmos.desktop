@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Desmos Graphing Calculator (Nativefier Collections)
+Exec=nfc-desmos
+Icon=/usr/share/pixmaps/nfc-desmos.png
+Categories=Office;Utility;Nativefier;

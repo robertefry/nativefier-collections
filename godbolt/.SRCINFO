@@ -1,0 +1,10 @@
+pkgname = nfc-godbolt
+pkgdesc = "Nativefier Collections; GodBolt Compiler Explorer (godbolt.org)"
+pkgver = 1
+pkgrel = 1
+url = https://godbolt.org
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source = nfc-godbolt.desktop
+sha256sums = 8a69c4f1953fbf3de69ae91bc069d79e336e1df01b056dcde3fea2233fe0a76f

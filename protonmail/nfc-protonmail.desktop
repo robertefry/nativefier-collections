@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Proton Mail (Nativefier Collections)
+Exec=nfc-protonmail
+Icon=/usr/share/pixmaps/nfc-protonmail.png
+Categories=Mail;Network;Office;Utility;Nativefier;

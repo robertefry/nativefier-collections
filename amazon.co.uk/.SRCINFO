@@ -1,0 +1,12 @@
+pkgname = nfc-amazon
+pkgdesc = "Nativefier Collections; Amazon (amazon.co.uk)"
+pkgver = 1
+pkgrel = 1
+url = https://amazon.co.uk
+arch = x86_64
+license = GPL2
+makedepends = nodejs-nativefier
+source=nfc-amazon.desktop
+source=nfc-amazon.png
+sha256sums=6fd05b0b68972b7ff8e6b5c0d8e129c44a742a46f5afbc0cef9cfee0e51783b9
+sha256sums=0801b6dbbb1a097e7b7471ea991be2f0322ce1bede8202efadd22e28577c0fb3
