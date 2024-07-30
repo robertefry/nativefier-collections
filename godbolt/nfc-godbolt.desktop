@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=GodBolt Compiler Explorer (Nativefier Collections)
+Name=GodBolt Compiler Explorer
+GenericName=Nativefier Collections (https://godbolt.org)
 Exec=nfc-godbolt
 Icon=/usr/share/pixmaps/nfc-godbolt.png
 Categories=Development;Utility;Nativefier;

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Google Maps (Nativefier Collections)
+Name=Google Maps
+GenericName=Nativefier Collections (https://maps.google.com)
 Exec=nfc-google-maps
 Icon=/usr/share/pixmaps/nfc-google-maps.png
 Categories=Office;Google;Nativefier;

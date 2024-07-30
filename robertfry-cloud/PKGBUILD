@@ -9,7 +9,7 @@ url=https://cloud.robertfry.xyz
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-robertfry-cloud.desktop)
-sha256sums=(82c738ca2552960b77cb400c46f42fc96bc4624f873e8413668e787f19cdaa84)
+sha256sums=(cd1267b227661f80c353cfbd67fed7260ebab008f3a599cb0b55971e5a636eec)
 
 _instname=nfc-robertfry-cloud
 _execname=NativefierCollections-RobertFry-Cloud

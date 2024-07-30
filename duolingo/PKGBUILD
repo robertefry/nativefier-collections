@@ -9,7 +9,7 @@ url=https://duolingo.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-duolingo.desktop)
-sha256sums=(74695605dac5aa946a2f6e3cc2bfb0acc755b71b820c9a4ccfc7ec47d0e500b2)
+sha256sums=(7707c628bb095b432c3c1f50668d79c503a3331e6fd55e5e160f794c4d2d0d55)
 
 _instname=nfc-duolingo
 _execname=NativefierCollections-Duolingo

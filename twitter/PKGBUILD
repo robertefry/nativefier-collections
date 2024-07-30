@@ -9,7 +9,7 @@ url=https://twitter.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-twitter.desktop)
-sha256sums=(025bd71bba701b4057cd834b6a1f591f72165b742d09952b94d88120f6cb7bd9)
+sha256sums=(02026289495fbfbeea01ec4afe5a9395a0ac885ee46714a51a375a91c8a259d8)
 
 _instname=nfc-twitter
 _execname=NativefierCollections-Twitter

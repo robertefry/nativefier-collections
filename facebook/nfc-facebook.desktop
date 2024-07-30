@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Facebook (Nativefier Collections)
+Name=Facebook
+GenericName=Nativefier Collections (https://facebook.com)
 Exec=nfc-facebook
 Icon=/usr/share/pixmaps/nfc-facebook.png
 Categories=Nativefier;Network;

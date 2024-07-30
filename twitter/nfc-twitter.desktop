@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Twitter (Nativefier Collections)
+Name=Twitter
+GenericName=Nativefier Collections (https://twitter.com)
 Exec=nfc-twitter
 Icon=/usr/share/pixmaps/nfc-twitter.png
 Categories=Nativefier;Network;

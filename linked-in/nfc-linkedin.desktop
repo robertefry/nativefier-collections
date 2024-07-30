@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=LinkedIn (Nativefier Collections)
+Name=LinkedIn
+GenericName=Nativefier Collections (https://linkedin.com)
 Exec=nfc-linkedin
 Icon=/usr/share/pixmaps/nfc-linkedin.png
 Categories=Network;Office;Utility;Nativefier;

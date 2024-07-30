@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Google Mail (Nativefier Collections)
+Name=Google Mail
+GenericName=Nativefier Collections (https://mail.google.com)
 Exec=nfc-google-mail
 Icon=/usr/share/pixmaps/nfc-google-mail.png
 Categories=Office;Google;Nativefier;

@@ -9,7 +9,7 @@ url=https://miro.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-miro.desktop)
-sha256sums=(8d672596be103639882f3b4e1ae174ec47ed003c59434336e3e55f925a8e792b)
+sha256sums=(def6b94e35c9781cb9e34aeb58d26a080c1c2104ca117138389966d08f2249fe)
 
 _instname=nfc-miro
 _execname=NativefierCollections-Miro

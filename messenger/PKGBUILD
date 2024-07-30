@@ -9,7 +9,7 @@ url=https://messenger.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-messenger.desktop)
-sha256sums=(90a971f5fd6a6d0f96c6295745cedb341e25e550f158e8d0e58b32cffb23f5c0)
+sha256sums=(cec97ca802492ea8403848ffbbd1995131c4180cbfb05061b3f8ced5d61f95c0)
 
 _instname=nfc-messenger
 _execname=NativefierCollections-Messenger

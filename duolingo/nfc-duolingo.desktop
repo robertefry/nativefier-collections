@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Duolingo (Nativefier Collections)
+Name=Duolingo
+GenericName=Nativefier Collections (https://duolingo.com)
 Exec=nfc-duolingo
 Icon=/usr/share/pixmaps/nfc-duolingo.png
 Categories=Education;Languages;Nativefier;

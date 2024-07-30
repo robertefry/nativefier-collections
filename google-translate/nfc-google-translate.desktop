@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Google Translate (Nativefier Collections)
+Name=Google Translate
+GenericName=Nativefier Collections (https://translate.google.com)
 Exec=nfc-google-translate
 Icon=/usr/share/pixmaps/nfc-google-translate.png
 Categories=Office;Translation;Google;Nativefier;

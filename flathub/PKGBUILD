@@ -9,7 +9,7 @@ url=https://flathub.org
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-flathub.desktop)
-sha256sums=(7d68f586f68abf3a2ce412644152acedad8d4a6084545fa897abcd032dcba2f4)
+sha256sums=(6ec24016b82e94d053f06ee1b81aba6175316c0914a14b505c03dc368df8abfc)
 
 _instname=nfc-flathub
 _execname=NativefierCollections-FlatHub

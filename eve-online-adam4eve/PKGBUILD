@@ -9,7 +9,7 @@ url=https://www.adam4eve.eu
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-eve-online-adam4eve.desktop)
-sha256sums=(6235b8a8d9d97275d1871ee42fa1b62dcbc38eeb2da1ac4ff7f5ad39e58c193b)
+sha256sums=(070d74a4be4b13cf4140ad04d299ca0986fea69bb7511e16f827bae1c2e51b28)
 
 _instname=nfc-eve-online-adam4eve
 _execname=Adam4EVE

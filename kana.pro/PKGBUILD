@@ -9,7 +9,7 @@ url=https://kana.pro
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-kana-pro.desktop)
-sha256sums=(0cee2cc5c19cd6e3a99a65446bb35414feb6037408038265b7cdfc4d5f52bf81)
+sha256sums=(ce7092c82e8f1b14afa68ddfb29abd79c9ee113c018603211a2e7313a0ee1c04)
 
 _instname=nfc-kana-pro
 _execname=NativefierCollections-Kana-Pro

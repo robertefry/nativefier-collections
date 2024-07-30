@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Kana Pro (Nativefier Collections)
+Name=Kana Pro
+GenericName=Nativefier Collections (https://kana.pro)
 Exec=nfc-kana-pro
 Icon=/usr/share/pixmaps/nfc-kana-pro.png
 Categories=Education;Languages;Nativefier;

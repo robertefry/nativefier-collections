@@ -10,7 +10,7 @@ license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-google-office.desktop
         nfc-google-office.png)
-sha256sums=(e98c5178433c092c79937e0c40940311da7c588d07c4fef28d8f371b8330c6a4
+sha256sums=(fe3e5f137f006a172282a659a2c8c4361627c79b6fda7e24a534fa08bf865b2e
             66bdce2fa39ca142d63f322cf9b0dc93873269930652a30037c1882fe99e02fd)
 
 _instname=nfc-google-office

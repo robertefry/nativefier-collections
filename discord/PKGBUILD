@@ -10,7 +10,7 @@ license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-discord.desktop
         nfc-discord.png)
-sha256sums=(09783a087c96108dbd7d2c4370a62a2af4cbe3e58930b32992499570531066e6
+sha256sums=(617d63da7cd7a1dc8067993317ab7d4bb7123118e0d51af02c9f4bab02838613
             40160b15802f2798447b80807108845507be88663128f9d1c7593139e2b05e15)
 
 _instname=nfc-discord

@@ -10,7 +10,7 @@ license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-godbolt.desktop
         nfc-godbolt.png)
-sha256sums=(8a69c4f1953fbf3de69ae91bc069d79e336e1df01b056dcde3fea2233fe0a76f
+sha256sums=(3ba7761ada4462ee0c80ec622ff01ddd1104f33117cc60fe506c4b4ab90477e1
             71b7676525367ba1e27ec06f460d448666db9104f7f47ba5de2fbc7194a9783b)
 
 _instname=nfc-godbolt

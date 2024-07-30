@@ -9,7 +9,7 @@ url=https://facebook.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-facebook.desktop)
-sha256sums=(a00fd44bd0b8fe6a0c1d96e8069fa3cd4225506f882b4b8ed925dd5462ac7fba)
+sha256sums=(462beddd7044b600a82394f8809972a0a2004005adc07b704ffb94a3d2efda3f)
 
 _instname=nfc-facebook
 _execname=NativefierCollections-Facebook

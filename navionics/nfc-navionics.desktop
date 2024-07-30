@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Navionics (Nativefier Collections)
+Name=Navionics
+GenericName=Nativefier Collections (https://webapp.navionics.com)
 Exec=nfc-navionics
 Icon=/usr/share/pixmaps/nfc-navionics.png
 Categories=Utility;Nativefier;

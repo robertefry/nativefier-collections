@@ -12,7 +12,7 @@ source=(https://userstyles.org/styles/userjs/166493/dark-leetcode.user.js
         nfc-leetcode.desktop
         nfc-leetcode.png)
 sha256sums=(c57766af516a336b27cafb85f51438fc144918d27f575e776cf8995d96571a45
-            9e596a4cf072c5f28db52dd8cf3a9607c2341521fcf21386ea820a27a3f5f67d
+            b1b33e3f95bb2c6357ba92f1b16b0aeb731aba3b724ffb2e4d133936bc58c49b
             308c6dd469a3c353eb9b4798023034163d1ba3d1d986dd8679a3a71e98015ed0)
 
 _instname=nfc-leetcode

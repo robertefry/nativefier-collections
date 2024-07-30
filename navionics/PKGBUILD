@@ -11,7 +11,7 @@ makedepends=(nodejs-nativefier)
 source=(no-header.js
         nfc-navionics.desktop)
 sha256sums=(6a87677bd1f2fd7a99c5b8e38255d0e9fa6c00d5cf22ad97cffe2d9ba9fc7b54
-            37baf669eccf135a37efa831c9ca226237736a9ad8b8e739062f6eddb1004486)
+            151f603d3f1f44bf4a16473579e6fe03ca1664e68594fa57b79028bc4f50b0da)
 
 _instname=nfc-navionics
 _execname=NativefierCollections-Navionics

@@ -9,7 +9,7 @@ url=https://lotuseaters.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-lotuseaters.desktop)
-sha256sums=(f3ad794127ce5ef92d8f4c0d617d14bb8a7b5c29345f7fd52a081a5265a666e8)
+sha256sums=(5e122d852d942e144125451bfb496c213f2d02989142976005aac99057c247a3)
 
 _instname=nfc-lotuseaters
 _execname=NativefierCollections-LotusEaters

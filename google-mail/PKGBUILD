@@ -10,7 +10,7 @@ license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-google-mail.desktop
         nfc-google-mail.png)
-sha256sums=(fe6ad6e67868f4caeca83559158c879e0d4f572989a92e4625e6bf69539189a3
+sha256sums=(5d0889627a3aa8765f2f674f0738e5b496e19537b9ffaef2ed725a8ea1ec5126
             b174f7adadb177dc99684b4150e484409c450a52f8890bec4351dbe58adc3adb)
 
 _instname=nfc-google-mail

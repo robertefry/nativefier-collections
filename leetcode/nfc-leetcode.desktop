@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=LeetCode (Nativefier Collections)
+Name=LeetCode
+GenericName=Nativefier Collections (https://leetcode.com)
 Exec=nfc-leetcode
 Icon=/usr/share/pixmaps/nfc-leetcode.png
 Categories=Development;Education;Utility;Nativefier;

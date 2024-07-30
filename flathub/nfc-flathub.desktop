@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=FlatHub (Nativefier Collections)
+Name=FlatHub
+GenericName=Nativefier Collections (https://flathub.org)
 Exec=nfc-flathub
 Icon=/usr/share/pixmaps/nfc-flathub.png
 Categories=Network;Utility;Nativefier;

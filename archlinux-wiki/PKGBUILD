@@ -12,7 +12,7 @@ source=(https://userstyles.org/styles/userjs/89090/another-dark-arch-linux-theme
         nfc-archlinux-wiki.desktop
         nfc-archlinux-wiki.png)
 sha256sums=(fixme
-            6186dfc8aba5df081a5d17cb065da890d01858b600d98d1f28df4a6528ae0699
+            a7ac04454925e7b13f1192db690e76670fe36f8afe7802f7a328057e9ba168d6
             a74923f6b6ca60cc5cec192cae7da93385c7eb2048c993144bbcecab1a217882)
 
 _instname=nfc-archlinux-wiki

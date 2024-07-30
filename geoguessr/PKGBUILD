@@ -10,7 +10,7 @@ license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-geoguessr.desktop
         nfc-geoguessr.png)
-sha256sums=(73929d28c487adf12fbda8c23479ac5be15030e4f296d429b79efaf00724ead3
+sha256sums=(913ff91976fef17feea346f54106dab5a9a06f18ce5a2bff9fe9c386909f4872
             9e07472086ffd0f98a8db720b3bc31f5012f77c78823690204a822698d77f27f)
 
 _instname=nfc-geoguessr

@@ -3,14 +3,14 @@
 pkgname=nfc-protonmail
 pkgver=1
 pkgrel=1
-pkgdesc="Nativefier Collections; ProtonMail (protonmail.com)"
+pkgdesc="Nativefier Collections; ProtonMail (mail.protonmail.com)"
 arch=(x86_64)
 url=https://mail.protonmail.com/
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-protonmail.desktop
         nfc-protonmail.png)
-sha256sums=(d8d26a02a4ebe58571d4b94409327657c403fc7ed89614cfe02b264994eb06e4
+sha256sums=(3662c56a88d91efa73d1d6eef9ada5230e6919b48baf9ebc91bdcd1d2c89e15c
             a100b72cc057d7cadc3e66ca8995920d6d38f64adbd1b0f0498dbef507453e7e)
 
 _instname=nfc-protonmail

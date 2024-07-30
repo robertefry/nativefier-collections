@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Miro Team Whiteboard (Nativefier Collections)
+Name=Miro Team Whiteboard
+GenericName=Nativefier Collections (https://miro.com)
 Exec=nfc-miro
 Icon=/usr/share/pixmaps/nfc-miro.png
 Categories=Office;Utility;Nativefier;

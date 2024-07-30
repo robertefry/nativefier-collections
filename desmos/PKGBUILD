@@ -11,7 +11,7 @@ makedepends=(nodejs-nativefier)
 source=(https://userstyles.org/styles/userjs/206349/desmos-dark-theme.user.js
         nfc-desmos.desktop)
 sha256sums=(21004d422e3bbcf2b4fb1d26e97eab3d0d87a946d82c5a5dea47bb8ad25042d9
-            33e0d2300f354d6233dff581db4e3d5566b7a55970f01e9bc3fbd7206d5b105e)
+            bdd91875b8310aff11ba701869ef9cabb002cf2c8c587af3f5e474d51feb92e5)
 
 _instname=nfc-desmos
 _execname=NativefierCollections-Desmos

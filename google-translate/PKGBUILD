@@ -10,7 +10,7 @@ license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
 source=(nfc-google-translate.desktop
         nfc-google-translate.png)
-sha256sums=(f3f659c2d41b990e10b3f493b4466b9cd919f19519ae64fd1aa1a293f59e32b7
+sha256sums=(f8948ec9f331dc0bc3254dc6f38d312c7e24f2e89a6082c48cc42099db757154
             67983ca91db1b75c9aa67a98affe3e2cca79509fd78e87e77d85158c8bd5c7ee)
 
 _instname=nfc-google-translate

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=GitHub (Nativefier Collections)
+Name=GitHub
+GenericName=Nativefier Collections (https://github.com)
 Exec=nfc-github
 Icon=/usr/share/pixmaps/nfc-github.png
 Categories=Development;Utility;Nativefier;

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Emsworth Slipper Sailing Club
+GenericName=Nativefier Collections (https://emsworthslippersc.org.uk)
+Exec=nfc-essc
+Icon=/usr/share/pixmaps/nfc-essc.png
+Categories=Utility;Network;Nativefier;

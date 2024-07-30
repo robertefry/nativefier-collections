@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Adam4Eve (Nativefier Collections)
+Name=Adam4Eve (EVE Online)
+GenericName=Nativefier Collections (https://www.adam4eve.eu)
 Exec=nfc-eve-online-adam4eve
 Icon=/usr/share/pixmaps/nfc-eve-online-adam4eve.png
 Categories=Game;Utility;Nativefier;

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Messenger (Nativefier Collections)
+Name=Messenger
+GenericName=Nativefier Collections (https://messenger.com)
 Exec=nfc-messenger
 Icon=/usr/share/pixmaps/nfc-messenger.png
 Categories=Nativefier;Network;

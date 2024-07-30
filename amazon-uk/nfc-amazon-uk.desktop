@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Amazon UK (Nativefier Collections)
+Name=Amazon UK
+GenericName=Nativefier Collections (https://amazon.co.uk)
 Exec=nfc-amazon-uk
 Icon=/usr/share/pixmaps/nfc-amazon-uk.png
 Categories=Development;Education;Utility;Nativefier;
