@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=My Anime List
+GenericName=Nativefier Collections (https://myanimelist.net)
+Exec=nfc-myanimelist
+Icon=/usr/share/pixmaps/nfc-myanimelist.png
+Categories=Education;Languages;Nativefier;

@@ -1,0 +1,35 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-myanimelist
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; My Anime List (myanimelist.net)"
+arch=(x86_64)
+url=https://myanimelist.net
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-myanimelist.desktop
+        nfc-myanimelist.png)
+sha256sums=(b85578327d775ad63f41daa091a95a4aa50fb70ca3e4bf1216dd0a779ef0fd15
+            38c91651ac80a8ce25b9c5fb6291fabe98eb6bb46481b3f3cc3b9b12bc90a1f0)
+
+_instname=nfc-myanimelist
+_execname=NativefierCollections-MyAnimeList
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://myanimelist.net" \
+    --name $_execname \
+    --icon "nfc-myanimelist.png"
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}
