@@ -1,0 +1,36 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-navionics
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; Navionics (webapp.navionics.com)"
+arch=(x86_64)
+url=https://webapp.navionics.com
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(no-header.js
+        nfc-navionics.desktop)
+sha256sums=(6a87677bd1f2fd7a99c5b8e38255d0e9fa6c00d5cf22ad97cffe2d9ba9fc7b54
+            37baf669eccf135a37efa831c9ca226237736a9ad8b8e739062f6eddb1004486)
+
+_instname=nfc-navionics
+_execname=NativefierCollections-Navionics
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://webapp.navionics.com" \
+    --name $_execname \
+    --inject no-header.js
+}
+
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}
