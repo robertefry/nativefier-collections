@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=LotusEaters (Nativefier Collections)
+Exec=nfc-lotuseaters
+Icon=/usr/share/pixmaps/nfc-lotuseaters.png
+Categories=Network;Video;Nativefier;
