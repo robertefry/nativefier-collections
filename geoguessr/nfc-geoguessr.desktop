@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=GoeGuessr (Nativefier Collections)
+Exec=nfc-geoguessr
+Icon=/usr/share/pixmaps/nfc-geoguessr.png
+Categories=Game;Education;Nativefier;

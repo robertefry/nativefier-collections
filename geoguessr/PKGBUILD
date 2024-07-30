@@ -1,0 +1,35 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-geoguessr
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; GeoGuessr (geoguessr.com)"
+arch=(x86_64)
+url=https://www.geoguessr.com
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-geoguessr.desktop
+        nfc-geoguessr.png)
+sha256sums=(73929d28c487adf12fbda8c23479ac5be15030e4f296d429b79efaf00724ead3
+            9e07472086ffd0f98a8db720b3bc31f5012f77c78823690204a822698d77f27f)
+
+_instname=nfc-geoguessr
+_execname=NativefierCollections-GeoGuessr
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://www.geoguessr.com" \
+    --name $_execname \
+    --icon "nfc-geoguessr.png"
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}
