@@ -11,7 +11,7 @@ makedepends=(nodejs-nativefier)
 source=(https://userstyles.org/styles/userjs/89090/another-dark-arch-linux-theme.user.js
         nfc-archlinux-wiki.desktop
         nfc-archlinux-wiki.png)
-sha256sums=(fixme
+sha256sums=(d7e4c608ebd7df429f5448a0ce43205b2e3527458971e6d481610ccc7f9c8910
             a7ac04454925e7b13f1192db690e76670fe36f8afe7802f7a328057e9ba168d6
             a74923f6b6ca60cc5cec192cae7da93385c7eb2048c993144bbcecab1a217882)
 
