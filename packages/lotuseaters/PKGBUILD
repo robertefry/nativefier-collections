@@ -8,8 +8,10 @@ arch=(x86_64)
 url=https://lotuseaters.com
 license=('GPL','custom:2')
 makedepends=(nodejs-nativefier)
-source=(nfc-lotuseaters.desktop)
-sha256sums=(5e122d852d942e144125451bfb496c213f2d02989142976005aac99057c247a3)
+source=(nfc-lotuseaters.desktop
+        nfc-lotuseaters.png)
+sha256sums=(5e122d852d942e144125451bfb496c213f2d02989142976005aac99057c247a3
+            eb906f90f097aa63bc957aaa50b582c6c59ddfa98d83f0dcd54416ec0b14c0de)
 
 _instname=nfc-lotuseaters
 _execname=NativefierCollections-LotusEaters
@@ -17,7 +19,8 @@ _builddir=$_execname-linux-x64
 
 build() {
   nativefier "https://lotuseaters.com" \
-    --name $_execname
+    --name $_execname \
+    --icon "nfc-lotuseaters.png"
 }
 
 package() {
