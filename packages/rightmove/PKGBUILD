@@ -1,0 +1,32 @@
+# Maintainer: Robert Fry <contact@robertfry.xyz>
+
+pkgname=nfc-rightmove-uk
+pkgver=1
+pkgrel=1
+pkgdesc="Nativefier Collections; RightMove UK (https://rightmove.co.uk)"
+arch=(x86_64)
+url=https://rightmove.co.uk
+license=('GPL','custom:2')
+makedepends=(nodejs-nativefier)
+source=(nfc-rightmove-uk.desktop)
+sha256sums=(cc563fc58d22a2d051776f44d7e947628007a6d9493a586f7d180973a2fc5099)
+
+_instname=nfc-rightmove-uk
+_execname=NativefierCollections-RightMove-UK
+_builddir=$_execname-linux-x64
+
+build() {
+  nativefier "https://rightmove.co.uk" \
+    --name $_execname
+}
+
+package() {
+  install -d "$pkgdir"/opt
+  cp -rL $_builddir "$pkgdir"/opt/$pkgname
+
+  install -d "$pkgdir"/usr/{bin,share/pixmaps}
+  ln -sf /opt/$pkgname/$_execname "$pkgdir"/usr/bin/$_instname
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$_instname.png
+
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$_instname.desktop
+}

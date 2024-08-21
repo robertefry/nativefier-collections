@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=RightMove UK
+GenericName=Nativefier Collections (https://rightmove.co.uk)
+Exec=nfc-rightmove-uk
+Icon=/usr/share/pixmaps/nfc-rightmove-uk.png
+Categories=Development;Education;Utility;Nativefier;
