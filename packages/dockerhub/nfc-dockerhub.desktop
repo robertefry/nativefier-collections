@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=DockerHub
+GenericName=Nativefier Collections (https://hub.docker.com)
+Exec=nfc-dockerhub
+Icon=/usr/share/pixmaps/nfc-dockerhub.png
+Categories=Network;Utility;Nativefier;
