@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Indeed
+GenericName=Nativefier Collections (https://www.indeed.com)
+Exec=nfc-indeed
+Icon=/usr/share/pixmaps/nfc-indeed.png
+Categories=Network;Office;Utility;Nativefier;
